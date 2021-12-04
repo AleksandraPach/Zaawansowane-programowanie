@@ -1,6 +1,8 @@
-name:list=["Ala","Zosia","Kasia","Asia","Jozek"]
-def print_name(name:list):
+name: list = ["Ala", "Zosia", "Kasia", "Asia", "Jozek"]
+
+
+def print_name(names: list):
     print(f"{name}")
 
-print_name(name)
 
+print_name(name)
