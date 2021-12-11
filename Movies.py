@@ -4,17 +4,18 @@ import csv
 
 
 class Movie:
-    def __init__(self, movieid: int, title: str, genres: List[str]) -> None:
-        self.movieid = movieid
+    def __init__(self, id: int, title: str, genres: List[str]) -> None:
+        self.id = id
         self.title = title
         self.genres = genres
 
     def __str__(self) -> str:
-        return f"Movie {self.movieid}: {self.title}, genres: {self.genres}"
+        return f"Id: {self.id} Title: {self.title}, genre: {self.genres}"
+
 
 class Movies(Resource):
 
-    movies: List[str] = []
+    movies: List[Movie] = []
 
     def __init__(self) -> None:
         super().__init__()
